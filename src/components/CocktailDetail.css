@@ -1,0 +1,45 @@
+.cocktail-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .cocktail-detail img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .cocktail-detail h2,
+  .cocktail-detail h3 {
+    margin: 10px 0;
+  }
+  
+  .ingredients-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ingredients-list li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .ingredients-list img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .ingredients-list span {
+    font-size: 1.2em;
+  }
+  
+  .cocktail-detail p {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
