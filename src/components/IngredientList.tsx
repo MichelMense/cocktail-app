@@ -29,15 +29,15 @@ const IngredientList: React.FC<IngredientListProps> = ({
         None
       </label>
       {displayedIngredients.map((ingredient) => (
-        <div key={ingredient.strIngredient1}>
+        <div key={ingredient.strIngredient}>
           <label>
             <input
               type="radio"
-              value={ingredient.strIngredient1}
-              checked={selectedIngredient === ingredient.strIngredient1}
-              onChange={() => onSelectIngredient(ingredient.strIngredient1)}
+              value={ingredient.strIngredient}
+              checked={selectedIngredient === ingredient.strIngredient}
+              onChange={() => onSelectIngredient(ingredient.strIngredient)}
             />
-            {ingredient.strIngredient1}
+            {ingredient.strIngredient}
           </label>
         </div>
       ))}
