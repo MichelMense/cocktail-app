@@ -1,32 +1,34 @@
 #cocktailcard {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #cocktailcard img {
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
-  }
-  
-  #cocktailcard .cocktail-text {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  #cocktailcard .drink {
-    font-size: 1.6em;
-    margin-bottom: 10px;
-  }
-  
-  #cocktailcard .alcoholic,
-  #cocktailcard .category {
-    font-size: 1.2em;
-    color: #666;
-  }
-  
+  background: #cec7c7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cocktailcard .cocktail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cocktailcard img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+#cocktailcard .cocktail-text {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#cocktailcard .drink {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+#cocktailcard .alcoholic,
+#cocktailcard .category {
+  font-size: 1.2em;
+  color: #666;
+}
