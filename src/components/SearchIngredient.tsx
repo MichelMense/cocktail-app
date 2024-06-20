@@ -1,11 +1,11 @@
 import React from "react";
 import "./SearchBar.css";
 
-interface SearchBarProps {
+interface SearchIngredientProps {
   onSearch: (query: string) => void;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
+const SearchBar: React.FC<SearchIngredientProps> = ({ onSearch }) => {
   const [query, setQuery] = React.useState("");
 
   const handleSearch = (search: string) => {
@@ -18,12 +18,11 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
         type="text"
         value={query}
         onChange={(e) => {
-          setQuery(e.target.value);
-          handleSearch(e.target.value);
+            setQuery(e.target.value);
+            handleSearch(e.target.value);
         }}
-        placeholder="Search for cocktails..."
+        placeholder="Search for ingredients..."
       />
-      <button onClick={() => handleSearch(query)}>Search</button>
     </section>
   );
 };

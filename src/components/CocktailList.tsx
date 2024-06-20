@@ -11,7 +11,7 @@ const CocktailList: React.FC<CocktailListProps> = ({ cocktails }) => {
   return (
     <section id="cocktaillist">
       {cocktails.map((cocktail) => (
-        <CocktailCard key={cocktail.idDrink} cocktail={cocktail} />
+        <CocktailCard key={cocktail.id} cocktail={cocktail} />
       ))}
     </section>
   );

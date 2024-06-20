@@ -1,9 +1,9 @@
 export interface Ingredient {
-    idIngredient: number;
-    strIngredient: string;
-    strDescription: string;
-    strType: string,
-    strAlcohol: string,
-    strABV: string
+    id: string;
+    title: string;
+    description: string;
+    type: string,
+    alcohol: string,
+    ABV: string
   }
   

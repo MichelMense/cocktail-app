@@ -11,17 +11,17 @@ const CocktailCard: React.FC<CocktailCardProps> = ({ cocktail }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/cocktail/${cocktail.idDrink}`);
+    navigate(`/cocktail/${cocktail.id}`);
   };
 
   return (
     <section id="cocktailcard" onClick={handleClick}>
       <div className="cocktail-container">
-        <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
+        <img src={cocktail.drinkThumb} alt={cocktail.title} />
         <div className="cocktail-text">
-          <h3 className="drink">{cocktail.strDrink}</h3>
-          <h3 className="alcoholic">{cocktail.strAlcoholic}</h3>
-          <h3 className="category">{cocktail.strCategory}</h3>
+          <h3 className="drink">{cocktail.title}</h3>
+          <h3 className="alcoholic">{cocktail.alcoholic}</h3>
+          <h3 className="category">{cocktail.category}</h3>
         </div>
       </div>
     </section>
